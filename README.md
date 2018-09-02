@@ -1,3 +1,11 @@
+## Setup:
+norm_csv.py runs on Mac, Windows, or Linux using Python 3.7.0
+
+## Usage:
+clone repo and run ```python norm_csv.py``` 
+
+
+
 _This is one of the steps in the Truss interview process. If you've
 stumbled upon this repository and are interested in a career with
 Truss, [check out our jobs page](https://truss.works/jobs)._
