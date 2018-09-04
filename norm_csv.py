@@ -2,6 +2,7 @@ import csv
 import datetime
 
 def normalize_file(infile, outfile):
+    """ This tool reads a CSV file from stdin and creates a normalized CSV on stdoutself."""
     with open(infile, encoding='utf-8') as infile, open(outfile, "w", encoding='utf-8') as outfile:
         reader = csv.reader(infile, delimiter=',')
         writer = csv.writer(outfile)
@@ -18,6 +19,7 @@ def normalize_file(infile, outfile):
             writer.writerow(row)
 
 def get_float(t):
+    """Converts HH:MM:SS.MS format to floating point seconds."""
     hr, mm, sec = map(float, t.split(':'))
     inMs = ((hr * 60 + mm) * 60 + sec) * 1000
     return int(inMs)
