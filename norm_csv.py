@@ -2,7 +2,7 @@ import csv
 import datetime
 
 def normalize_file(infile, outfile):
-    """ This tool reads a CSV file from stdin and creates a normalized CSV on stdoutself."""
+    """ This tool reads a CSV file from stdin and creates a normalized CSV on stdout."""
     with open(infile, encoding='utf-8') as infile, open(outfile, "w", encoding='utf-8') as outfile:
         reader = csv.reader(infile, delimiter=',')
         writer = csv.writer(outfile)
