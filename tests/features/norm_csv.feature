@@ -8,5 +8,5 @@ Feature: As a creator of a csv file
     Then the input file will be normalized
 
     Examples: Files
-    |infile | outfile |
+    |infile     | outfile   |
     |sample.csv | fixed.csv |
